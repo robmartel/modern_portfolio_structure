@@ -21,6 +21,10 @@ export const Container = styled.div`
 export const Span = styled.span`
   font-size: 2rem;
   margin-left: 0.5rem;
+  &:hover {
+    color: teal;
+    opacity: 1;
+  }
 `;
 
 export const Div1 = styled.div`
@@ -58,7 +62,7 @@ export const NavLink = styled.a`
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: teal;
     opacity: 1;
     cursor: pointer;
   }
