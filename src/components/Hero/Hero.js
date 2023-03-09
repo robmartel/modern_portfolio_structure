@@ -14,9 +14,9 @@ const Hero = ({image}) => (
         my Portfolio
       </SectionTitle>
       <SectionText>
-        I am a full-stack developer ... ****UPdate me hero.js
+        I am a full-stack developer ... 
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>Learn More (update me)</Button>
+      <Button onClick={() => window.location = 'https://google.com'}>Learn More</Button>
     </LeftSection>
   </Section>
 );
