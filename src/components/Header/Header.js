@@ -3,7 +3,7 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { HiOutlineFingerPrint } from 'react-icons/hi';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIconsContainer, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
@@ -32,15 +32,17 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com">
+    <SocialIconsContainer>
+      <SocialIcons href="https://github.com/robmartel">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://linkedin.com">
+      <SocialIcons href="https://www.linkedin.com/in/rob-martel-1a8533b3/?originalSubdomain=ca">
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://instagram.com">
+      {/* <SocialIcons href="https://instagram.com">
         <AiFillInstagram size="3rem" />
-      </SocialIcons>
+      </SocialIcons> */}
+      </SocialIconsContainer>
     </Div3>
   </Container>
 );

@@ -64,6 +64,7 @@ export const NavLink = styled.a`
   &:hover {
     color: teal;
     opacity: 1;
+    font-size: 3rem;
     cursor: pointer;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -119,6 +120,22 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 
 // Social Icons 
+
+export const SocialIconsContainer = styled.div`
+max-width: 1040px;
+display: flex;
+justify-content: space-between;
+
+@media ${props => props.theme.breakpoints.md}{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media ${props => props.theme.breakpoints.sm}{
+  display: flex;
+  flex-direction: row;
+}
+`
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
